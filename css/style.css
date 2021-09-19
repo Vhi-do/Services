@@ -68,7 +68,7 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    background-color: rgba(45, 45, 45, 0.04);
+    background-color: rgba(45, 45, 45, 0.05);
 }
 .services .services-text-btn {
     margin-top: 200px;
@@ -601,9 +601,9 @@
         color: skyblue;
     }   
 }
-@media (max-width: 480px) {
+@media (max-width: 426px) {
     .top-icon .top-menu-icon {
-        margin-left: 60%;
+        margin-left: 48%;
     }
     .top-icon .top-menu-icon img {
         height: 30px;
@@ -614,21 +614,34 @@
     }
     .painter-section {
         padding-left: 40px;
-        }
+        background-position: 81.49% 50%;
+        background-position-x: 81.49%;
+        background-position-y: 50%;
+        overflow: hidden;
+    }
     .painter-section .text-section p {
         font-size: 25px;
-        margin-top: 7px;   
+        margin-top: 210px;   
     }
     .painter-section .text-section h1 {
         font-size: 58px;
         font-weight: 650;
     }
     .painter-section .text-section .line {
-        width: 135%;
+        width: 150%;
         height: 15px;
     }
-    .painter-section {
-        height: 100vh;  
+    .painter-section .text-section .service-icon img {
+        width: 0;
+        height: 0;
+    }
+    .painter-section .text-section .service-icon .text p {
+        width: 0;
+        height: 0;
+        font-size: 0;
+    }
+    .services {
+        height: 115vh;
     }
     .services .services-text-btn {
         margin-top: 90px;
@@ -644,38 +657,66 @@
     }
     .services .services-text-btn h2 {
         font-size: 45px;
+        padding: 25px 0;
+    }
+    .services .services-text-btn h2 {
+        font-size: 45px;
     }
     .services .services-text-btn .specialize {
         font-size: 23px;
         text-align: center;
     }
+    .help-row {
+        flex-direction: column;
+        gap: 2%;
+        margin-top: 30px;
+    }
+    .help-row .help-first-row {
+        width: 100%;
+    }
+    .help-row .help-second-row {
+        width: 100%;
+        margin-top: 30px;
+    }
+    .help-row .help-first-row p {
+        width: 80%;
+        padding-top: 45px;
+        font-size: 20px;
+    }
     .help-row .help-second-row p {
         margin-top: 15px;
-        font-size: 30px;
+        font-size: 28px;
+        text-align: center;
+    }
+    .help-row .help-second-row img {
+        margin-top: 30px;
     }
     .best-row {
-        height: 250vh;
-        margin-top: 40px;
+        height: 270vh;
+        margin-top: 25px;
         flex-direction: column;
+    }
+    .best-img {
+        padding-left: 0;
     }
     .best-text-btn {
         margin: auto;
         width: 70%;
-        margin-top: 170px;
+        margin-top: 80px;
     }
     .best-text-btn h2 {
-        font-size: 50px;
+        font-size: 48px;
     }
     .best-text-btn p {
         margin-top: 30px;
         width: 80%;
-        font-size: 25px;
+        font-size: 30px;
     }
     .best-text-btn hr {
         margin-top: 30px;
     }
     .our-services {
-        height: 205vh;
+        height: 215vh;
         width: 80%;
         flex-direction: column;
         margin-top: 60px;
@@ -685,123 +726,90 @@
         width: 90%;
     }
     .our-services .our-services-first-row h2 {
-        font-size: 60px;
+        font-size: 55px;
     }
     .our-services .our-services-second-row {
         width: 90%;
     }
     .our-services .our-services-third-row {
-        width: 60%;
-    }
-    .our-services .our-services-first-row img {
-        margin-right: 250px;
-        width: 100px;
-        height: 100px;
-        margin-top: 25px;
-    }
-    .our-services .our-services-first-row h3 {
-        margin-top: 15px;
-        font-size: 20px;
-    }
-    .our-services .our-services-first-row p {
-        margin-top: 15px;
-        font-size: 20px;
         width: 90%;
-    }
-    .our-services .our-services-second-row img {
-        margin-top: 25px;
-        margin-right: 250px;
-        width: 110px;
-        height: 110px;
-    }
-    .our-services .our-services-second-row {
-        margin: 40px 0;
-    }
-    .our-services .our-services-second-row h3 {
-        margin-top: 15px;
-        font-size: 25px;
-    }
-    .our-services .our-services-second-row p {
-        margin-top: 15px;
-        font-size: 20px;
-        width: 90%;
-    }
-    .our-services .our-services-third-row img {
-        margin-top: 15px;
-        width: 120px;
-        height: 120px;
-        display: flex;
-        justify-self: flex-start;
-    }
-    .our-services .our-services-third-row h3 {
-        margin-top: 20px;
-        font-size: 25px;
     }
     .our-services .our-services-third-row p {
-        margin-top: 20px;
-        font-size: 20px;
-        width: 140%;
+        font-size: 20px;    
     }
     .about {
-        margin-top: 0;
-        height: 315vh;
+        margin-top: 20px;
+        height: 310vh;
         display: flex;
         flex-direction: column;
         color: white;
     }
-    .about-img .about-img-first-row {
-        display: flex;
-        flex-direction: column;
-    }
-    .about-img .about-img-second-row {
-        display: flex;
-        flex-direction: column;
-    }
-    .about-img .about-img-first-row .head-img img {
-        width: 400px;
-        height: 300px;
-    }
-    .about-img .about-img-first-row .rg-img img {
-        width: 400px;
-        height: 300px;
-        padding-top: 20px;
-    }
-    .about-img .about-img-second-row .zinc-img img {
-        width: 400px;
-        height: 300px;
-    }
-    .about-img .about-img-second-row .hand-img img {
-        width: 400px;
-        height: 300px;
-        padding-top: 20px;
-    }
     .about .about-text {
-        margin-bottom: 20px;
         width: 50%;
         display: flex;
         flex-direction: column;
-    }
-    .about .about-text .edited {
-        flex-direction: column;
+        margin-top: 100px;
+        padding-left: 0px;
+        text-align: center;
     }
     .about .about-text p {
         font-size: 25px;
     }
     .about .about-text h3 {
         font-size: 60px;
+        margin-left: 53px;
+    }
+    .about-img {
+        display: flex;
+        flex-direction: column;
+        margin-top: 60px;
+        width: 100%;
+    }
+    .about-img .about-img-first-row {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+    .about-img .about-img-second-row {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        padding-top: 20px;
+    }
+    .about .about-text .edited {
+        flex-direction: column;
+    }
+    .about-img .about-img-first-row .head-img img {
+        width: 330px;
+        height: 260px;
+    }
+    .about-img .about-img-first-row .rg-img img {
+        width: 330px;
+        height: 300px;
+        padding-top: 20px;
+    }
+    .about-img .about-img-second-row .zinc-img img {
+        width: 330px;
+        height: 270px;
+    }
+    .about-img .about-img-second-row .hand-img img {
+        width: 330px;
+        height: 300px;
+        padding-top: 20px;
     }
     .get {
-        height: 125vh;
+        height: 145vh;
     }
     .get h2 {
         padding-top: 50px;
-        font-size: 40px;
-        width: 70%;   
+        font-size: 35px;
+        width: 80%;   
     }
     .get p {
         font-size: 35px;
         margin-top: 30px;
-        width: 60%;
+        width: 70%;
+        line-height: 45px;
     }
     .get .get-btn {
         flex-direction: column;
@@ -809,12 +817,19 @@
     .get .get-btn .call-btn {
         margin-top: 20px;
     }
-    .service-icon img{
-        width: 0;
-        height: 0;
+    .end {
+        height: 45vh;
+        width: 100%;
     }
-    .service-icon .text p{
-        font-size: 0;
-        padding-top: 0;
+    .end .sample {
+        font-size: 20px;
+        width: 80%;
+        padding: 0;
+        padding-top: 30px;
+        margin: auto;
+    }
+    .end .web {
+        font-size: 16px;
+        margin-top: 60px;
     }
 }
