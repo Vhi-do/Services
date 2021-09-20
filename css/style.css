@@ -617,7 +617,6 @@
         background-position: 81.49% 50%;
         background-position-x: 81.49%;
         background-position-y: 50%;
-        overflow: hidden;
     }
     .painter-section .text-section p {
         font-size: 25px;
@@ -698,6 +697,7 @@
     }
     .best-img {
         padding-left: 0;
+        padding-right: 45px;
     }
     .best-text-btn {
         margin: auto;
