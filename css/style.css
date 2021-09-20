@@ -695,9 +695,13 @@
         margin-top: 25px;
         flex-direction: column;
     }
+    .best-img img {
+        height: 450px;
+        width: 350px;
+    }
     .best-img {
         width: 100;
-        margin: 0 auto;
+        margin: auto;
         padding-left: 0;
         height: 100vh;
         margin-right: 80px;
